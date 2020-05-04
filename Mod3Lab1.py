@@ -10,7 +10,7 @@ Input(s): list/description
 Process: description of what function does
 Output: return value and description
 """
-
+import sys
 def main():
     """
     # conditional literals
@@ -102,6 +102,7 @@ def main():
         print(4/0)
     except:
         print("\nthere was a divide by zero error, exiting.\n")
-        exit()
+    finally:
+        return()
 
 main()    
